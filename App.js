@@ -1,12 +1,39 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
+import { StyleSheet, Text, View, Button, SafeAreaView } from 'react-native';
+import InputBox from './src/components/inputBox'
+import Header from './src/components/header'
+import Boton from './src/components/boton'
+import React, { useState } from 'react';
 export default function App() {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const userCargado = "hola";
+  const passCargada = "chau123";
+  const verificacion = () => {
+    if (username === "" || password === "") {
+      alert("Completa todos campos.");
+      return;
+    }
+  }
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <SafeAreaView style={styles.container}>
+      <Header />
       <StatusBar style="auto" />
-    </View>
+      <InputBox
+        placeholder="Ingrese su nombre de usuario"
+        value={username}
+        onChangeText={setUsername}
+        secureTextEntry={false}
+      />
+      <InputBox
+        placeholder="Ingrese su contraseña"
+        value={password}
+        onChangeText={setPassword}
+        secureTextEntry={true}
+      />
+      <Boton
+      />
+    </SafeAreaView>
   );
 }
 
@@ -15,6 +42,5 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
   },
 });
