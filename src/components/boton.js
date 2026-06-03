@@ -1,12 +1,12 @@
 import React from 'react';
 import { Button, StyleSheet, View } from 'react-native';
 
-const Boton = () => {
+const Boton = ({onPress}) => {
   return (
     <View style={styles.buttonContainer}>
       <Button 
         title="Ingresar" 
-        onPress={() => {}} 
+        onPress={onPress} 
         color="#8e5dfb" 
       />
     </View>

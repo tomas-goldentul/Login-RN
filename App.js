@@ -7,12 +7,20 @@ import React, { useState } from 'react';
 export default function App() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [resultado, setResultado] = useState('')
   const userCargado = "hola";
   const passCargada = "chau123";
   const verificacion = () => {
     if (username === "" || password === "") {
-      alert("Completa todos campos.");
-      return;
+     setResultado("Completa todos los campos")
+    }
+    else if(username === userCargado && password === passCargada){
+         setResultado("Se ingreso con exito")
+
+    }
+    else{
+            setResultado("Usuario y/o contraseña incorrectos")
+
     }
   }
   return (
@@ -31,7 +39,7 @@ export default function App() {
         onChangeText={setPassword}
         secureTextEntry={true}
       />
-      <Boton
+      <Boton onPress={verificacion}
       />
     </SafeAreaView>
   );
