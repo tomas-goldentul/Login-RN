@@ -19,7 +19,7 @@ export default function App() {
 
     }
     else{
-            setResultado("Usuario y/o contraseña incorrectos")
+            setResultado("Usuario o contraseña incorrectos, vuelva a intentar")
 
     }
   }
@@ -41,6 +41,9 @@ export default function App() {
       />
       <Boton onPress={verificacion}
       />
+      <Text style={styles.mensaje}>
+        {resultado}
+      </Text>
     </SafeAreaView>
   );
 }
@@ -50,5 +53,9 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
+  },
+    mensaje: {
+    marginTop: 20,
+    fontSize: 18,
   },
 });
