@@ -1,5 +1,6 @@
 import React from "react";
-import {  TextInput, StyleSheet } from "react-native-web";
+import { TextInput, StyleSheet } from "react-native"; 
+
 const InputBox = (props) => {
     return (
         <TextInput
@@ -11,6 +12,7 @@ const InputBox = (props) => {
         />
     )
 }
+
 const styles = StyleSheet.create({
   input: {
     height: 40,
@@ -23,4 +25,5 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff", 
   },
 });
+
 export default InputBox;
