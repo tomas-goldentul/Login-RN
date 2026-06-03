@@ -16,7 +16,7 @@ const Boton = ({onPress}) => {
 const styles = StyleSheet.create({
   buttonContainer: {
     marginTop: 20,
-    width: 250,
+    width: 280,
     alignSelf: 'center',
   },
 });

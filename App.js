@@ -45,13 +45,15 @@ export default function App() {
       <Text style={styles.mensaje}>
         {resultado}
       </Text>
-
-      <TextoComplementario
-      mensaje = "Olvidaste la clave?"
-      />
+      <View style={styles.complementarios}>
         <TextoComplementario
-      mensaje = "Crear cuenta"
-      />
+          mensaje="Olvidaste la clave?"
+        />
+        <TextoComplementario
+          mensaje="Crear cuenta"
+        />
+      </View>
+
     </SafeAreaView>
   );
 }
@@ -64,6 +66,14 @@ const styles = StyleSheet.create({
   },
   mensaje: {
     marginTop: 20,
-    fontSize: 18,
+    minHeight: 50,
+    width: '90%',
+    textAlign: 'center',
+    fontSize: 16,
+    color: '#444',
   },
+   complementarios: {
+    marginTop: 60,
+    alignItems: 'center',
+  }
 });

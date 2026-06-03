@@ -1,12 +1,18 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { Text, StyleSheet } from 'react-native';
 
 const TextoComplementario = (props) => {
     return (
-        <Text>
+        <Text style={styles.texto}>
             {props.mensaje}
         </Text>
     );
 };
-
+const styles = StyleSheet.create({
+    texto: {
+        fontSize: 16,
+        color: '#007AFF',
+        marginVertical: 8,
+    },
+});
 export default TextoComplementario

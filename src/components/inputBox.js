@@ -16,13 +16,17 @@ const InputBox = (props) => {
 const styles = StyleSheet.create({
   input: {
     height: 40,
-    width: 250,      
-    margin: 12,
+   width: "90%",
+    maxWidth: 350,
+    height: 55,
+    marginVertical: 10,
+    paddingHorizontal: 15,
+    backgroundColor: "#f8f9fa",
     borderWidth: 1,
-    padding: 10,
-    borderRadius: 5,
-    borderColor: "#ccc",
-    backgroundColor: "#fff", 
+    borderColor: "#e0e0e0",
+    borderRadius: 12,
+    fontSize: 16,
+
   },
 });
 
