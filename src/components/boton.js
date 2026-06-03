@@ -5,9 +5,9 @@ const Boton = () => {
   return (
     <View style={styles.buttonContainer}>
       <Button 
-        title="Iniciar Sesión" 
+        title="Ingresar" 
         onPress={() => {}} 
-        color="#007BFF" 
+        color="#8e5dfb" 
       />
     </View>
   );
@@ -16,7 +16,7 @@ const Boton = () => {
 const styles = StyleSheet.create({
   buttonContainer: {
     marginTop: 20,
-    width: '80%',
+    width: 250,
     alignSelf: 'center',
   },
 });
