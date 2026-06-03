@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     texto: {
         fontSize: 16,
         color: '#000000',
-        marginVertical: 8,
+        marginVertical: 6,
     },
 });
 export default TextoComplementario

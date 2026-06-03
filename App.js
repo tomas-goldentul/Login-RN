@@ -1,9 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button, SafeAreaView } from 'react-native';
 import InputBox from './src/components/inputBox'
-import Header from './src/components/header'
+import Logo from './src/components/logo'
 import Boton from './src/components/boton'
 import TextoComplementario from './src/components/textoComplementario'
+import Header from './src/components/header'
 import React, { useState } from 'react';
 export default function App() {
   const [username, setUsername] = useState('');
@@ -27,7 +28,8 @@ export default function App() {
   }
   return (
     <SafeAreaView style={styles.container}>
-      <Header />
+      <Header/>
+      <Logo />
       <StatusBar style="auto" />
       <InputBox
         placeholder="Ingrese su nombre de usuario"
@@ -74,7 +76,7 @@ const styles = StyleSheet.create({
     color: '#444',
   },
    complementarios: {
-    marginTop: 60,
+    marginTop: -20,
     alignItems: 'center',
   }
 });

@@ -1,26 +1,26 @@
-import React from "react";
-import { StyleSheet, View, Image } from 'react-native';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
 export default function Header() {
   return (
-    <View style={styles.container}>
-      <Image
-        source={require('../../assets/logo.png')}
-        style={styles.logo}
-        resizeMode="contain"
-      />
+    <View style={styles.header}>
+      <Text style={styles.headerText}>Login App (Gartenkrot, Goldentul)</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    marginTop: 40, 
+  header: {
+    backgroundColor: '#6200EE',
+    width: '100%',
+    paddingTop: 50,
+    paddingBottom: 15,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  logo: {
-    width: 150,
-    height: 150,
+  headerText: {
+    color: '#FFFFFF',
+    fontSize: 18,
+    fontWeight: 'bold',
   },
 });
