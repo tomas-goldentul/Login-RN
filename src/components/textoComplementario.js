@@ -11,7 +11,7 @@ const TextoComplementario = (props) => {
 const styles = StyleSheet.create({
     texto: {
         fontSize: 16,
-        color: '#007AFF',
+        color: '#000000',
         marginVertical: 8,
     },
 });

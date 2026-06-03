@@ -23,6 +23,7 @@ export default function App() {
       setResultado("Usuario o contraseña incorrectos, vuelva a intentar")
 
     }
+    
   }
   return (
     <SafeAreaView style={styles.container}>
