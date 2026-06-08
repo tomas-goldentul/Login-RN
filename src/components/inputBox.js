@@ -8,7 +8,8 @@ const InputBox = (props) => {
             placeholder={props.placeholder}
             value={props.value}
             onChangeText={props.onChangeText}
-            secureTextEntry={props.secureTextEntry}
+            secureTextEntry={props.secureTextEntry}   //[IA:Gemini] secureTextEntry para ocultar (o no) lo que se esta ingresando
+
         />
     )
 }

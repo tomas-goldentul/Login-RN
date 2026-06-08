@@ -35,13 +35,13 @@ export default function App() {
         placeholder="Ingrese su nombre de usuario"
         value={username}
         onChangeText={setUsername}
-        secureTextEntry={false}
+        secureTextEntry={false}  //[IA:Gemini] secureTextEntry para no ocultar  lo que se esta ingresando
       />
       <InputBox
         placeholder="Ingrese su contraseña"
         value={password}
         onChangeText={setPassword}
-        secureTextEntry={true}
+        secureTextEntry={true}  //[IA:Gemini] secureTextEntry para ocultar lo que se esta ingresando
       />
       <Boton onPress={verificacion}
       />

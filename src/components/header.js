@@ -10,6 +10,7 @@ export default function Header() {
 }
 
 const styles = StyleSheet.create({
+  //[IA:Gemini] generado el estilo del header para que sea igual al de la imagen
   header: {
     backgroundColor: '#6200EE',
     width: '100%',
